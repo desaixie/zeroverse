@@ -1,6 +1,7 @@
 # Zeroverse
 Official code for arxiv paper *LRM-Zero: Training Large Reconstruction Models with Synthesized Data*, by Desai Xie, Sai Bi, Zhixin Shu, Kai Zhang, Zexiang Xu, Yi Zhou, Soren Pirk, Arie Kaufman, Xin Sun, Hao Tan, a collaboration between Adobe Research, Stony Brook University, and Kiel University.
-![teaser](https://github.com/desaixie/lrm-zero/blob/main/static/images/lrm_zero_teaser_v5.png?raw=true)
+![lrmzero_zeroverse_figure_v2](https://github.com/desaixie/zeroverse/assets/32966374/67ec1a22-bf99-4a87-b8a5-fb06372bc66a)
+
  
 [arxiv](https://arxiv.org/abs/2406.09371) [project website](https://desaixie.github.io/lrm-zero/)
 
@@ -56,7 +57,12 @@ export PATH=path/to/blender/:$PATH  # needs blender binary in addition to bpy to
 ## Synthesizing and Rendering a Single Object
 1. Synthesize objects in .obj and .mtl and convert to .glb: `python create_shapes.py --seed 0 --output_dir outputs/`
 2. Optionally add boolean difference or wireframe augmentation and render .glb: `python zeroverse_rgba.py --seed 0 --object_path outputs/some_uuid/some_uuid.glb --output_dir outputs/some_uuid/views`
-    - add `--boolean_probability 1.0` and/or `--wireframe_probability 1.0` to add these augmentations, which will be done right before rendering the views
+    - add `--boolean_probability 1.0` and/or `--wireframe_probability 1.0` to add these augmentations, which will be done right before rendering the views.
+
+Example of a boolean-difference augmented object:
+
+<img src="https://github.com/desaixie/zeroverse/assets/32966374/b5740697-ed3d-4c14-9bde-e3b9b632fff5" width="600"/>
+
 
 ## Zeroverse Dataset Generation
 - You just need to parallelize the above single-shape synthesizing process and run it for 800K times, each object with a different seed. Then you will get your own Zeroverse dataset with 800K objects, matching the size of Objaverse!
