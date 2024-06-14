@@ -1,5 +1,5 @@
 # Zeroverse
-Official code for arxiv paper [LRM-Zero: Training Large Reconstruction Models with Synthesized Data](https://arxiv.org), by Desai Xie, Sai Bi, Zhixin Shu, Kai Zhang, Zexiang Xu, Yi Zhou, Soren Pirk, Arie Kaufman, Xin Sun, Hao Tan, a collaboration between Adobe Research, Stony Brook University, and Kiel University.
+Official code for arxiv paper LRM-Zero: Training Large Reconstruction Models with Synthesized Data ([arxiv](https://arxiv.org/abs/2406.09371), [project website](https://desaixie.github.io/lrm-zero/)), by Desai Xie, Sai Bi, Zhixin Shu, Kai Zhang, Zexiang Xu, Yi Zhou, Soren Pirk, Arie Kaufman, Xin Sun, Hao Tan, a collaboration between Adobe Research, Stony Brook University, and Kiel University.
 
 This repository only contains the minimal code for procedurally synthesizing a single *Zeroverse* object.
 To generate a large-scale *Zeroverse*dataset, you need to parallelly run the code with different seed for each object.
@@ -61,6 +61,15 @@ export PATH=path/to/blender/:$PATH  # needs blender binary in addition to bpy to
 ## Citation
 If you find this code useful, please consider citing:
 ```
+@misc{xie2024lrmzero,
+      title={LRM-Zero: Training Large Reconstruction Models with Synthesized Data}, 
+      author={Desai Xie and Sai Bi and Zhixin Shu and Kai Zhang and Zexiang Xu and Yi Zhou and Sören Pirk and Arie Kaufman and Xin Sun and Hao Tan},
+      year={2024},
+      eprint={2406.09371},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CV' full_name='Computer Vision and Pattern Recognition' is_active=True alt_name=None in_archive='cs' is_general=False description='Covers image processing, computer vision, pattern recognition, and scene understanding. Roughly includes material in ACM Subject Classes I.2.10, I.4, and I.5.'}
+}
+
 @article{xu2018deep,
   title={Deep image-based relighting from optimal sparse samples},
   author={Xu, Zexiang and Sunkavalli, Kalyan and Hadap, Sunil and Ramamoorthi, Ravi},
