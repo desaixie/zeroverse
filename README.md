@@ -1,5 +1,5 @@
 # Zeroverse
-Official code for arxiv paper *LRM-Zero: Training Large Reconstruction Models with Synthesized Data*, by Desai Xie, Sai Bi, Zhixin Shu, Kai Zhang, Zexiang Xu, Yi Zhou, Soren Pirk, Arie Kaufman, Xin Sun, Hao Tan, a collaboration between Adobe Research, Stony Brook University, and Kiel University.
+Official code for NeurIPS 2024 paper *LRM-Zero: Training Large Reconstruction Models with Synthesized Data*, by Desai Xie, Sai Bi, Zhixin Shu, Kai Zhang, Zexiang Xu, Yi Zhou, Soren Pirk, Arie Kaufman, Xin Sun, Hao Tan, a collaboration between Adobe Research, Stony Brook University, and Kiel University.
 ![lrmzero_zeroverse_figure_v2](https://github.com/desaixie/zeroverse/assets/32966374/67ec1a22-bf99-4a87-b8a5-fb06372bc66a)
 
  
